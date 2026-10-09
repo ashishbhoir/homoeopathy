@@ -1,5 +1,6 @@
 {
   "name": "sunflora-homoeopathy",
+  "homepage": "https://ashishbhoir.github.io/homoeopathy",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "dependencies": {
     "framer-motion": "^13.4.0",
